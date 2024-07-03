@@ -6,7 +6,7 @@ const LoadingScreen = () => (
     <motion.div
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      exit={{ opacity: 0}}
       transition={{ duration: 1 }}
       style={{
         display: 'flex',
@@ -22,8 +22,8 @@ const LoadingScreen = () => (
       }}
     >
         <TypeAnimation
-  sequence={['LOADING', 50]}
-  className='text-7xl font-blackOp font-semibold drop-shadow-lg shadow-md text-white tracking-[20px]'
+  sequence={['WELCOME!', 50]}
+  className='text-7xl font-kurale font-semibold drop-shadow-lg shadow-md text-white tracking-[20px]'
   repeat={Infinity}
 />
       {/* <h1 className='text-7xl font-montserrat text-white tracking-[10px]'>LOADING</h1> */}
@@ -41,7 +41,7 @@ const Loader = () => {
     }, []);
   
     return (
-      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+      <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
         <AnimatePresence>
           {isLoading && <LoadingScreen />}
         </AnimatePresence>
