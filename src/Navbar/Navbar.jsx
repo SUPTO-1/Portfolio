@@ -2,8 +2,8 @@ import avatar from '../assets/images/avatar.jpg'
 const Navbar = () => {
     const links = (
         <>
-            <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a>Home</a></li>
-            <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a>Services</a></li>
+            <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a href="#home">Home</a></li>
+            <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a href="#services">Services</a></li>
             <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a>Resume</a></li>
             <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a>Portfolio</a></li>
             <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a>Contact</a></li>
@@ -31,7 +31,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content rounded-box z-50 mt-3 w-52 p-2 shadow"
           >
             {
                 links
@@ -43,7 +43,7 @@ const Navbar = () => {
     <img src={avatar} />
   </div>
 </div>
-        <a className="text-2xl font-kurale">Supto</a>
+        <a className="text-2xl font-kurale ml-4 md:ml-0">Supto</a>
       </div>
       <div className="navbar-end w-3/4">
       <div className="hidden lg:flex">

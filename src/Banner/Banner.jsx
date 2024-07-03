@@ -3,12 +3,12 @@ import { TypeAnimation } from "react-type-animation";
 import profile from "../assets/images/file1.png";
 import { HiDownload } from "react-icons/hi";
 import 'react-awesome-button/dist/styles.css';
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import resume from '../assets/images/resume.pdf'
 const Banner = () => {
 
   return (
-    <div className="px-4 md:px-10 xl:px-56 lg:mt-20 w-full lg:gap-5 xl:gap-10 flex flex-col-reverse lg:flex-row lg:items-center">
+    <div id="home" className="px-4 md:px-10 xl:px-56 lg:mt-20 w-full lg:gap-5 xl:gap-10 flex flex-col-reverse lg:flex-row lg:items-center">
       <div className="text-white lg:w-[60%] xl:w-[55%]">
         <h4 className="text-2xl mb-4 lg:mb-8 font-montserrat">
           Welcome To My Portfolio
@@ -40,8 +40,8 @@ const Banner = () => {
           </div>
           <div className="mt-8 lg:mr-0 xl:mr-8">
             <button className="border-2 mr-2 p-2 border-[#8953f7] px-2 rounded-s-2xl rounded-e-2xl hover:bg-[#8953f7]"> <a href="https://www.facebook.com/Iam.suptoo/" target="_blank"><FaFacebook className="text-xl" /></a> </button>
-            <button className="border-2 mr-2 p-2 border-[#8953f7] px-2 rounded-s-2xl rounded-e-2xl hover:bg-[#8953f7]"> <a href="https://www.instagram.com/its_supto/" target="_blank">
-            <FaInstagram className="text-xl" /> </a></button>
+            <button className="border-2 mr-2 p-2 border-[#8953f7] px-2 rounded-s-2xl rounded-e-2xl hover:bg-[#8953f7]"> <a href="https://github.com/SUPTO-1" target="_blank">
+            <FaGithub className="text-xl" /> </a></button>
             <button className="border-2 mr-2 p-2 border-[#8953f7] px-2 rounded-s-2xl rounded-e-2xl hover:bg-[#8953f7]"> <a href="https://www.linkedin.com/in/jahidul-islam-supta/" target="_blank">
             <FaLinkedin className="text-xl" /></a> </button>
           </div>

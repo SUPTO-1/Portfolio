@@ -5,7 +5,7 @@ const routes = createBrowserRouter([
     {
         path:'/',
         element:<Loader></Loader>
-    }
+    },
 
 ])
 export default routes;
