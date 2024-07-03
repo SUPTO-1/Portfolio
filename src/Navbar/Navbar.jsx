@@ -39,11 +39,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="avatar">
-  <div className="w-16 md:mr-4 rounded-full">
+  <div className="w-12 md:mr-4 rounded-full">
     <img src={avatar} />
   </div>
 </div>
-        <a className="text-xl font-robotoMono">Jahidul</a>
+        <a className="text-2xl font-kurale">Supto</a>
       </div>
       <div className="navbar-end">
       <div className="hidden lg:flex">

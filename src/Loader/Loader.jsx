@@ -23,7 +23,7 @@ const LoadingScreen = () => (
     >
         <TypeAnimation
   sequence={['WELCOME!', 50]}
-  className='text-7xl font-kurale font-semibold drop-shadow-lg shadow-md text-white tracking-[20px]'
+  className='text-2xl md:text-5xl lg:text-7xl font-kurale font-semibold drop-shadow-lg shadow-md text-white tracking-[20px]'
   repeat={Infinity}
 />
       {/* <h1 className='text-7xl font-montserrat text-white tracking-[10px]'>LOADING</h1> */}
@@ -35,7 +35,7 @@ const Loader = () => {
     useEffect(() => {
       const timer = setTimeout(() => {
         setIsLoading(false);
-      }, 1000);
+      }, 1500);
   
       return () => clearTimeout(timer);
     }, []);
