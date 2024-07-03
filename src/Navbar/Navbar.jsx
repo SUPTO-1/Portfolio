@@ -3,7 +3,7 @@ const Navbar = () => {
     const links = (
         <>
             <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a>Home</a></li>
-            <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a> Feature</a></li>
+            <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a>Services</a></li>
             <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a>Resume</a></li>
             <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a>Portfolio</a></li>
             <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a>Contact</a></li>
@@ -11,7 +11,7 @@ const Navbar = () => {
     )
   return (
     <div className="navbar text-white mt-3 md:px-10">
-      <div className="navbar-start">
+      <div className="navbar-start w-1/4">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -45,7 +45,7 @@ const Navbar = () => {
 </div>
         <a className="text-2xl font-kurale">Supto</a>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end w-3/4">
       <div className="hidden lg:flex">
         <ul className="menu menu-horizontal">
             {
