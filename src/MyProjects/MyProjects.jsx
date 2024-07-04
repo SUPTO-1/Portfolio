@@ -6,7 +6,7 @@ import { SiJavascript } from "react-icons/si";
 
 const ProjectCard = ({ title, description, technologies, link, image, githubLink }) => {
   return (
-    <div className="max-w-lg bg-[#140c1c] rounded-2xl shadow-xl p-8 m-6 border border-transparent hover:border-[#8a54f8] transition duration-300">
+    <div id="project" className="max-w-lg bg-[#140c1c] rounded-2xl shadow-xl p-8 m-6 border border-transparent hover:border-[#8a54f8] transition duration-300">
       <img
         src={image}
         alt={`${title} screenshot`}

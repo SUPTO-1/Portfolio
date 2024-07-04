@@ -1,6 +1,8 @@
 import Banner from "../Banner/Banner";
+import Contact from "../Contact/Contact";
 import Education from "../Education/Education";
 import Features from "../Features/Features";
+import Footer from "../Footer/Footer";
 import MyProjects from "../MyProjects/MyProjects";
 import MySkills from "../MySkills/MySkills";
 import Navbar from "../Navbar/Navbar";
@@ -14,6 +16,8 @@ const Home = () => {
             <Education></Education>
             <MySkills></MySkills>
             <MyProjects></MyProjects>
+            <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };
