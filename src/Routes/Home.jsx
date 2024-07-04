@@ -1,6 +1,7 @@
 import Banner from "../Banner/Banner";
 import Education from "../Education/Education";
 import Features from "../Features/Features";
+import MyProjects from "../MyProjects/MyProjects";
 import MySkills from "../MySkills/MySkills";
 import Navbar from "../Navbar/Navbar";
 
@@ -12,6 +13,7 @@ const Home = () => {
             <Features></Features>
             <Education></Education>
             <MySkills></MySkills>
+            <MyProjects></MyProjects>
         </div>
     );
 };

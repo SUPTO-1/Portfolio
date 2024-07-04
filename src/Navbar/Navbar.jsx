@@ -5,7 +5,8 @@ const Navbar = () => {
             <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a href="#home">Home</a></li>
             <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a href="#services">Services</a></li>
             <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a href='#education'>Education</a></li>
-            <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a>Portfolio</a></li>
+            <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a href='#skills'>Skills</a></li>
+            <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a>Projects</a></li>
             <li className="text-base decoration-1 font-montserrat hover:text-gray-400"><a>Contact</a></li>
         </>
     )

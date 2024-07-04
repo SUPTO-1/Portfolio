@@ -44,7 +44,7 @@ const Education = () => {
       >
         {educationData.map((item, index) => (
           <SwiperSlide className="" key={index}>
-            <div  className="font-poppins p-8 bg-gradient-to-r from-[#321962] to-[#8a54f8] w-3/4 mx-auto rounded-lg text-left text-white shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <div  className="font-poppins p-8 bg-gradient-to-r from-[#321962] to-[#8a54f8] w-2/4 mx-auto rounded-lg text-left text-white shadow-lg transform hover:scale-105 transition-transform duration-300">
               <h2 className="text-2xl mb-2">{item.period}</h2>
               <h3 className="text-3xl font-bold mb-2">{item.degree}</h3>
               <p className="text-lg mb-4">{item.institution}</p>

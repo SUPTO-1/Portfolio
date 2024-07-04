@@ -4,7 +4,6 @@ import profile from "../assets/images/file1.png";
 import { HiDownload } from "react-icons/hi";
 import 'react-awesome-button/dist/styles.css';
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import resume from '../assets/images/resume.pdf'
 const Banner = () => {
 
   return (
@@ -35,7 +34,7 @@ const Banner = () => {
         <div className="mt-8 lg:mt-16 md:flex justify-between items-center">
           <div>
           <button className="border-2 border-[#8953f7] mt-4 lg:mt-10 p-2 lg:p-4 rounded-s-2xl rounded-e-2xl hover:bg-[#8953f7] flex items-center">
-            <a href={resume} download={true}>Download Resume <HiDownload className="inline text-xl ml-2" /></a>
+            <a href='https://drive.usercontent.google.com/download?id=1uzor2_4gFFc1itxmvo7eE7E964KNB9-v&export=download&authuser=0' download={true}>Download Resume <HiDownload className="inline text-xl ml-2" /></a>
           </button>
           </div>
           <div className="mt-8 lg:mr-0 xl:mr-8">
