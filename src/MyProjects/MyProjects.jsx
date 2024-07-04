@@ -1,8 +1,13 @@
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { DiMongodb } from "react-icons/di";
-import { FaReact, FaNodeJs } from "react-icons/fa";
+import { FaReact} from "react-icons/fa";
 import { IoLogoCss3, IoLogoFirebase } from "react-icons/io5";
-import { RiTailwindCssFill } from "react-icons/ri";
 import { SiJavascript } from "react-icons/si";
+import image1 from '../assets/images/healthCare.jpg';
+import image2 from '../assets/images/volunteerHub.jpg';
+import image3 from '../assets/images/earthcraft.jpg';
 
 const ProjectCard = ({ title, description, technologies, link, image, githubLink }) => {
   return (
@@ -47,6 +52,10 @@ const ProjectCard = ({ title, description, technologies, link, image, githubLink
 };
 
 const MyProjects = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const projects = [
     {
       title: "Health Care",
@@ -55,7 +64,7 @@ const MyProjects = () => {
       technologies: [<FaReact />, <SiJavascript />, <IoLogoFirebase />, <DiMongodb />, <IoLogoCss3 />],
       link: "https://unknown-daf67.web.app/",
       githubLink: "https://github.com/SUPTO-1/HealthCare_Client",
-      image: "/src/assets/images/healthCare.jpg",
+      image:image1
     },
     {
       title: "VolunteerHub",
@@ -64,7 +73,7 @@ const MyProjects = () => {
       technologies: [<FaReact />, <SiJavascript />, <IoLogoFirebase />, <DiMongodb />, <IoLogoCss3 />],
       link: "https://volunteerhub-f67d8.web.app/",
       githubLink: "https://github.com/SUPTO-1/VolunteerHub-client",
-      image: "/src/assets/images/volunteerHub.jpg",
+      image: image2,
     },
     {
       title: "EarthyCraft",
@@ -73,12 +82,12 @@ const MyProjects = () => {
       technologies: [<FaReact />, <SiJavascript />, <IoLogoFirebase />, <DiMongodb />, <IoLogoCss3 />],
       link: "https://volunteerhub-f67d8.web.app/",
       githubLink: "https://github.com/SUPTO-1/Earthy_Craft-client",
-      image: "/src/assets/images/earthcraft.jpg",
+      image: image3,
     },
   ];
 
   return (
-    <div className="bg-[#0f0715] py-20">
+    <div data-aos="fade-up" className="bg-[#0f0715] py-20">
       <h2 className="text-4xl text-center text-[#8a54f8] font-bold mb-10">
         My Projects
       </h2>

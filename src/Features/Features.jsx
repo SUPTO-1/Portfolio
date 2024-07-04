@@ -1,10 +1,13 @@
+import { motion } from "framer-motion";
 const Features = () => {
   return (
     <section id="services" className="">
       <div className="container flex flex-col justify-center mb-10 text-white lg:mt-32 px-4 py-8 mx-auto md:p-8">
-        <h2 className="text-3xl text-center mb-8 text-[#8a54f8] font-bold sm:text-4xl">
+        <motion.h2 whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: -100, opacity: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }} className="text-3xl text-center mb-8 text-[#8a54f8] font-bold sm:text-4xl">
           My <span className="#ac86fa">Quality Services</span>{" "}
-        </h2>
+        </motion.h2>
         <p className="mt-4 mb-14 text-xl text-center">
           Explore My services, designed to meet diverse needs with tailored
           solutions and expert support for unparalleled satisfaction!
