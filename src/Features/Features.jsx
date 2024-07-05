@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Bounce } from "react-awesome-reveal";
 const Features = () => {
   return (
     <section id="services" className="">
@@ -17,6 +18,7 @@ const Features = () => {
             <summary className="px-10 py-10 text-xl md:text-3xl font-poppins font-medium md:font-bold focus:outline-none focus-visible:dark:ring-violet-600">
               Front End Development
             </summary>
+            <Bounce>
             <p className="px-4 py-6 text-sm md:text-lg pt-0 ml-4 -mt-4">
               A dedicated front-end developer with expertise in HTML, CSS,
               Tailwind, React, and JavaScript. Specializes in creating dynamic,
@@ -26,11 +28,13 @@ const Features = () => {
               MongoDB. Committed to delivering exceptional user experiences and
               robust web applications.
             </p>
+            </Bounce>
           </details>
           <details className="w-full border-b-[1px] border-[#8953f7] hover:bg-[#321962]">
             <summary className="px-10 py-10 text-xl md:text-3xl font-poppins font-medium md:font-bold focus:outline-none focus-visible:dark:ring-violet-600">
               Problem Solving
             </summary>
+            <Bounce>
             <p className="px-4 py-6  text-sm md:text-lg pt-0 ml-4 -mt-4 ">
               An experienced problem solver with over 850+ problems solved on
               platforms like Codeforces, LeetCode, CodeChef, and HackerRank.
@@ -40,11 +44,13 @@ const Features = () => {
               and providing optimized solutions, showcasing a commitment to
               continuous learning and improvement in problem-solving techniques.{" "}
             </p>
+            </Bounce>
           </details>
           <details className="w-full border-b-[1px] border-[#8953f7] hover:bg-[#321962]">
             <summary className="px-10 py-10 text-xl md:text-3xl font-poppins font-medium md:font-bold focus:outline-none focus-visible:dark:ring-violet-600">
               Teaching Programming
             </summary>
+            <Bounce>
             <p className="px-4 text-sm md:text-lg py-6 pt-0 ml-4 -mt-4">
               An experienced instructor in C and C++ programming languages,
               adept at teaching and guiding students through foundational
@@ -53,6 +59,7 @@ const Features = () => {
               convey programming principles and foster comprehensive learning
               experiences.{" "}
             </p>
+            </Bounce>
           </details>
         </div>
       </div>
