@@ -3,8 +3,7 @@ import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-// import required modules
-import { EffectFlip, Pagination, Navigation } from "swiper/modules";
+import { EffectFlip, Pagination, Navigation, Autoplay } from "swiper/modules"; // Make sure to import Autoplay
 
 const Education = () => {
   const educationData = [
@@ -23,7 +22,7 @@ const Education = () => {
     {
       period: "2015-2017",
       degree: "SSC in Science",
-      institution: "Gazipur Police Lies School",
+      institution: "Gazipur Police Lines School",
       cgpa: "GPA: 5.00"
     }
   ];
@@ -37,13 +36,17 @@ const Education = () => {
         effect={"flip"}
         grabCursor={true}
         pagination={{ clickable: true }}
-        navigation={false} 
-        modules={[EffectFlip, Pagination, Navigation]}
+        navigation={false}
+        modules={[EffectFlip, Pagination, Navigation, Autoplay]} // Include Autoplay module
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         className="mySwiper relative"
       >
         {educationData.map((item, index) => (
-          <SwiperSlide className="" key={index}>
-            <div  className="font-poppins p-8 bg-gradient-to-r from-[#321962] to-[#8a54f8] md:w-2/4 md:mx-auto rounded-lg text-left text-white shadow-lg transform hover:scale-105 transition-transform duration-300">
+          <SwiperSlide key={index}>
+            <div className="font-poppins p-8 bg-gradient-to-r from-[#321962] to-[#8a54f8] md:w-2/4 md:mx-auto rounded-lg text-left text-white shadow-lg transform hover:scale-105 transition-transform duration-300">
               <h2 className="text-lg md:text-2xl mb-2">{item.period}</h2>
               <h3 className="text-xl md:text-3xl font-bold mb-2">{item.degree}</h3>
               <p className="text-sm md:text-lg mb-4">{item.institution}</p>

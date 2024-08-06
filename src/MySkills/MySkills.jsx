@@ -59,7 +59,7 @@ const MySkills = () => {
             <div className="flex flex-col justify-center items-center group-hover:text-[#8a54f8]">
               <FaHtml5 className="text-7xl mb-4 group-hover:text-[#f74a1d]" />
               <h2 className="text-xl font-poppins ml-2 font-bold text-[#747779] group-hover:text-[#31234d]">
-                92%
+              HTML
               </h2>
             </div>
           </motion.div>
